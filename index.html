@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+      <style>
+        #vertical{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    font-size: larger;
+    font-weight: bold;
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}
+html{
+    display: block;
+}
+body {
+    font-family: sans-serif;
+    font-size: medium;
+    background-color: rgb(22, 13, 13);
+    color: white;
+    background-image: url(BG.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+body {
+    display: block;
+    margin: 8px;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+}
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 2px;
+}
+      </style>
+</head>
+<body>
+    <table border="1" width="95%" align="center" cellpadding="6px" cellspacing="0">
+        <tbody align="center" >
+            <tr>
+            <th>DAYS & Time</th>
+            <td>8am -<br> 9am</td>
+            <td>9am -<br> 10am</td>
+            <td>10am -<br> 11am</td>
+            <td>11am -<br> 12am</td>
+            <td>12am -<br> 1pm</td>
+            <td>1pm -<br> 2pm</td>
+            <td>2pm -<br> 3pm</td>
+            <td>3pm -<br> 4pm</td>
+            <td>5pm -<br></td>
+            <td>6pm -<br></td>
+            <td>6pm -<br>7pm</td>
+            <td>8pm -<br>9pm</td>
+            <td>9pm -<br>10pm</td>
+            <td colspan="2">10pm -<br>11pm</td>
+        </tr>
+        <tr align="center" >
+            <th>MONDAY</th>
+            <td colspan="3" class="one">9am to 11am <br> Web and App</td>
+            <td colspan="2" class="one">11am to 1pm <br> Web and App</td>
+            <td rowspan="7" id="vertical">NAMAZ AND LUNCH BREAK</td>
+            <td colspan="2" class="five">2pm to 4pm<br>Video Editing <br> Section A <br>(Sir Abrar) </td>
+            <td colspan="3" >4pm to 6pm <br>Graphic Designing <br>Section A</td>
+            <td colspan="2" >6pm to 8pm <br> AI and Chatbot <br>(Section A) <br>(Sir Inzamam)</td>
+            <td colspan="2" >9pm to 11pm <br> Web and App <br>(Section A) <br>(Sir Inzamam)</td>
+        </tr>
+        <tr>
+            <th>TUESDAY</th>
+            <td colspan="3" class="two">9am to 11am <br>Graphic Designing </td>
+            <td colspan="2" class="two">11am to 1pm <br>Graphic Designing </td>
+            <td colspan="2" class="six">2pm to 4pm <br>CCO <br>(Section C) <br>(Sir Rizwan) </td>
+            <td colspan="3" >4pm to 6pm <br>Graphic Designing </td>
+            <td colspan="2" class="one" >7pm to 9pm <br> Web and App <br>(Sir Salman ) </td>
+            <td colspan="2" >
+                <!-- 9pm to 11pm <br>Web and App <br> (Sir Inzamam ) -->
+            </td>
+            <!-- 9pm to 11pm <br>Web and App <br> (Sir Inzamam ) -->
+        </tr>
+        <tr>
+            <th>WEDNESDAY</th>
+            <td colspan="3" class="one"> 9am to 11am <br>Web and App </td>
+            <td colspan="2" class="one"> 11am to 1pm <br>Web and App </td>
+            <td colspan="2" >2pm to 4pm <br>Video Editing <br> (Section A) <br>(Sir Abrar) </td>
+            <td colspan="3">4pm to 6pm <br>Graphic Designing <br>(Section A) </td>
+            <td colspan="2"> 6pm to 8pm <br> AI and Chatbot <br>(Section A) <br>(Sir Inzamam)</td>
+            <td colspan="2" class="one" >9pm to 11pm <br> Web and App <br>(Section A) <br>(Sir Inzamam) </td>
+        </tr>
+        <tr>
+            <th>THURSDAY</th>
+            <td colspan="5" class="three"> First Space</td>
+            <td colspan="2" class="five">2pm to 4pm <br>Video Editing <br> (Section A) <br>(Sir Abrar) </td>
+            <td colspan="3">4pm to 6pm <br>Graphic Designing <br>(Sir Abdullah) </td>
+            <td colspan="2" >7pm to 9pm <br> Web and App <br>(Sir Salman ) </td>
+            <td colspan="2" ></td>
+        </tr>
+        <tr>
+        <th>FRIDAY</th>
+        <td colspan="3" class="one"> 9am to 11am <br>Web and App <br>(Sir Haider) </td>
+            <td colspan="2" class="one"> 11am to 1pm <br>Web and App </td>
+            <td colspan="2" class="six" >2pm to 4pm <br>CCO <br> (Section C) <br>(Sir Rizwan) </td>
+            <td colspan="3">4pm to 6pm <br>Graphic Designing <br>(Section A) </td>
+            <td colspan="2"> 6pm to 8pm <br> AI and Chatbot <br>(Section A) <br>(Sir Inzamam)</td>
+            <td colspan="2" class="one" >9pm to 11pm <br> Web and App <br>(Section A) <br>(Sir Inzamam) </td>
+        </tr>
+        <tr>
+            <th>SATURDAY</th>
+            <td colspan="3" class="two" >9am to 11am <br>Graphic Designing <br>(Section A) </td>
+            <td colspan="2" class="two">11am to 1pm <br>Graphic Designing <br>(Section B)</td>
+            <td colspan="2" ><!-- 2pm to 4pm<br />Video Editing<br />Section-A<br />(Sir Abrar) --> </td>
+            <td colspan="3" >4pm to 6pm <br>Graphic Designing <br>(Section B)</td>
+            <td colspan="2" class="one">9pm to 11pm <br> Web and App <br>(Section A) <br>(Sir Inzamam) </td>
+            <td colspan="2">
+                <!--6pm to 8pm<br />AI and Chatbot<br />(Section-A)<br />(Sir Inzamam)-->
+            </td>
+        </tr>
+        <tr>
+            <th>SUNDAY</th>
+            <td colspan="1"><!-- 11am to 1pm<br />Web and App--></td>
+            <td colspan="3" class="four">9am to 11am<br>Web and App</td>
+            <td colspan="1">
+                <!-- 2pm to 4pm<br />Video Editing<br />Section-A<br />(Sir Abrar)-->
+              </td>
+              <td colspan="3" class="two">
+                2pm to 5pm<br>Video Editing<br>Section-B<br>(Sir Talha)
+              </td>
+              <td colspan="2">
+                <!-- 6pm to 8pm<br />AI and Chatbot<br />(Section-A)<br />(Sir Inzamam) -->
+              </td>
+              <td colspan="3">9pm to 11pm<br>Web and App<br>(Sir Inzamam)</td>
+              <td colspan="1">
+                <!-- 6pm to 8pm<br />AI and Chatbot<br />(Section-A)<br />(Sir Inzamam) -->
+              </td>
+        </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
